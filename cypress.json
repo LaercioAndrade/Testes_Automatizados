@@ -1,11 +1,16 @@
 {
-    "baseUrl":"http://automationpractice.com/index.php",
-    "viewportHeight": 660,
+    "baseUrl":"https://www.phptravels.net/home",
     "viewportWidth": 1000,
-    "defaultCommandTimeout": 10000,
+    "viewportHeight": 660,
 
-
+    
     "video": true,
     "videoUploadOnPasses": true,
-    "videoCompression": 32
+    "videoCompression": 32,
+
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "overwrite": false
+    }
+
 }

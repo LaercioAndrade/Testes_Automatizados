@@ -2,14 +2,12 @@
     "scripts": {
         "test:chrome": "cypress run --browser chrome"
     },
-
-    "cypress-cucumber-preprocessor":{
+    "cypress-cucumber-preprocessor": {
         "step_definitions": "cypress/support/steps"
     },
-
     "devDependencies": {
-        "cypress": "6.6.0", 
-        "cypress-cucumber-preprocessor": "4.0.1"  
+        "cypress": "6.6.0",
+        "cypress-cucumber-preprocessor": "4.0.1",
+        "mochawesome": "^6.2.2"
     }
-    
 }
