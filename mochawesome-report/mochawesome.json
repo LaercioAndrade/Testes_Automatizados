@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-03-16T01:25:05.078Z",
-    "end": "2021-03-16T01:25:25.095Z",
-    "duration": 20017,
+    "start": "2021-03-16T13:49:41.341Z",
+    "end": "2021-03-16T13:50:01.238Z",
+    "duration": 19897,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "964bd0ec-39e8-4c85-9336-2198f44e8e51",
+      "uuid": "145d91fe-af6f-4203-aeaa-752677b7afc6",
       "title": "",
       "fullFile": "cypress/integration/cadastro.feature",
       "file": "cypress/integration/cadastro.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "91fd7936-ee2e-40a9-ac23-f49b8a27bb0a",
+          "uuid": "33791e98-e147-42aa-851f-fb9a4c1a5f9e",
           "title": "Realizar cadastro no site PHPTravels",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Realizar cadastro preenchendo todos os campos",
               "fullTitle": "Realizar cadastro no site PHPTravels Realizar cadastro preenchendo todos os campos",
               "timedOut": null,
-              "duration": 19886,
+              "duration": 19724,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "0a41e69b-ccad-4eeb-913f-4b9b3ca8e534",
-              "parentUUID": "91fd7936-ee2e-40a9-ac23-f49b8a27bb0a",
+              "uuid": "bfcccc94-224e-4db6-abef-2b1f5b4c231f",
+              "parentUUID": "33791e98-e147-42aa-851f-fb9a4c1a5f9e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "0a41e69b-ccad-4eeb-913f-4b9b3ca8e534"
+            "bfcccc94-224e-4db6-abef-2b1f5b4c231f"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 19886,
+          "duration": 19724,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

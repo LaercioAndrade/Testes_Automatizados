@@ -34,7 +34,7 @@ class  TestPage {
     }
 
     email(){
-        cy.get(testelements.email()).type('testelaercio200@hotmail.com')
+        cy.get(testelements.email()).type('testelaercio02@hotmail.com')
     }
 
     password(){
