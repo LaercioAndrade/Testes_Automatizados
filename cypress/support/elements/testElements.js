@@ -12,6 +12,9 @@ confirmpassword = () => {return ':nth-child(7) > .pure-material-textfield-outlin
 botãosignup = () => {return '.signupbtn'}
 validarconta = () => {return '.text-align-left'}
 
+//segundo cenário
+emailjaexistente = () => {return '.alert'}
+
 }
 
 export default testElements;

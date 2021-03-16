@@ -12,7 +12,7 @@ class  TestPage {
         cy.visit(url)
         cy.wait(2000)
     }
-
+    
     BotãoMinhaConta(){
          cy.get(testelements.botãominhaconta()).click()
     }
@@ -34,7 +34,7 @@ class  TestPage {
     }
 
     email(){
-        cy.get(testelements.email()).type('testelaercio02@hotmail.com')
+        cy.get(testelements.email()).type('testelaercio03@hotmail.com')
     }
 
     password(){
@@ -52,6 +52,10 @@ class  TestPage {
     validarconta(){
         cy.get(testelements.validarconta()).contains('Hi, Laércio Gonçalves de Andrade')
         cy.screenshot()
+    }
+
+    emailjaexistente(){
+        cy.get(testelements.emailjaexistente()).contains('Email Already Exists.')
     }
 }
 export default TestPage;

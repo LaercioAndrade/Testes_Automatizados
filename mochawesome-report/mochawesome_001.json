@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 2,
-    "passes": 2,
+    "passes": 1,
     "pending": 0,
-    "failures": 0,
-    "start": "2021-03-16T22:19:48.257Z",
-    "end": "2021-03-16T22:20:20.525Z",
-    "duration": 32268,
+    "failures": 1,
+    "start": "2021-03-16T22:55:31.650Z",
+    "end": "2021-03-16T22:56:43.945Z",
+    "duration": 72295,
     "testsRegistered": 2,
-    "passPercent": 100,
+    "passPercent": 50,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "77775d39-0496-4891-8bbe-458ebdb1a51d",
+      "uuid": "7f4ada36-0cbd-4373-bb2c-efa099a34620",
       "title": "",
       "fullFile": "cypress/integration/cadastro.feature",
       "file": "cypress/integration/cadastro.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d8523f05-e18d-40fe-8c2f-4c83fcb54139",
+          "uuid": "a397ac36-0fdd-4af9-9cbf-2d40f81087b7",
           "title": "Realizar cadastro no site PHPTravels",
           "fullFile": "",
           "file": "",
@@ -38,17 +38,21 @@
               "title": "Realizar cadastro preenchendo todos os campos",
               "fullTitle": "Realizar cadastro no site PHPTravels Realizar cadastro preenchendo todos os campos",
               "timedOut": null,
-              "duration": 19647,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
+              "duration": 58153,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
-              "err": {},
-              "uuid": "831bb773-6b43-4a08-81f3-1f190bd95454",
-              "parentUUID": "d8523f05-e18d-40fe-8c2f-4c83fcb54139",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `.text-align-left`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `.text-align-left`, but never found it.\n    at TestPage.validarconta (https://www.phptravels.net/__cypress/tests?p=cypress/integration/cadastro.feature:235:10)\n    at Context.eval (https://www.phptravels.net/__cypress/tests?p=cypress/integration/cadastro.feature:288:12)\n    at Context.resolveAndRunStepDefinition (https://www.phptravels.net/__cypress/tests?p=cypress/integration/cadastro.feature:10737:9)\n    at Context.eval (https://www.phptravels.net/__cypress/tests?p=cypress/integration/cadastro.feature:10078:35)",
+                "diff": null
+              },
+              "uuid": "c9b8020b-b404-491c-805b-fbc72274c3d0",
+              "parentUUID": "a397ac36-0fdd-4af9-9cbf-2d40f81087b7",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +60,7 @@
               "title": "Validar e-mail já existente",
               "fullTitle": "Realizar cadastro no site PHPTravels Validar e-mail já existente",
               "timedOut": null,
-              "duration": 12510,
+              "duration": 13749,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,21 +69,22 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "e621acd9-7efd-4f1b-a8c4-d4eaf0096d1c",
-              "parentUUID": "d8523f05-e18d-40fe-8c2f-4c83fcb54139",
+              "uuid": "87fb4ea8-2d69-4c05-878b-b67567d3b628",
+              "parentUUID": "a397ac36-0fdd-4af9-9cbf-2d40f81087b7",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "831bb773-6b43-4a08-81f3-1f190bd95454",
-            "e621acd9-7efd-4f1b-a8c4-d4eaf0096d1c"
+            "87fb4ea8-2d69-4c05-878b-b67567d3b628"
           ],
-          "failures": [],
+          "failures": [
+            "c9b8020b-b404-491c-805b-fbc72274c3d0"
+          ],
           "pending": [],
           "skipped": [],
-          "duration": 32157,
+          "duration": 71902,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
