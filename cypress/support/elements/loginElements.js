@@ -1,6 +1,6 @@
 class loginElements{
 
-//login    
+//login   
 botãominhaconta = () => {return '.dropdown-login'}
 botãologin = () => {return '.dropdown-menu > div > .active'}
 email = () => {return ':nth-child(1) > .pure-material-textfield-outlined > span'}
@@ -10,6 +10,7 @@ validarlogin = () => {return '.text-align-left'}
 
 
 //login incorreto
+mensagemdeerrologin = () => {return '.alert'}
 }
 
 export default loginElements;

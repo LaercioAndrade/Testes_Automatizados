@@ -27,9 +27,10 @@ Then("valido se é possível realizar login", () => {
 
 //login incorretoo
 And("preencho os dados invalidos", () =>{
-
+    PageLogin.senhaincorreta();
+    PageLogin.login();
 })
 
-Then("valido se aparece uma mensagem de erro informando que não é possível realizar login", {
-    
+Then("valido se aparece uma mensagem de erro informando que não é possível realizar login", () => {
+    PageLogin.mensagemdeerrologin();
 })

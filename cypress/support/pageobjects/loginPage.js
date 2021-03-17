@@ -10,7 +10,7 @@ class LoginPage {
 //acessarSite
 acessarSite(){
     cy.visit(url)
-    cy.wait(1000)
+    cy.wait(5000)
 }
 
 botãominhaconta(){
@@ -20,7 +20,7 @@ botãologin(){
     cy.get(loginelements.botãologin()).click()
 }
 email(){
-    cy.get(loginelements.email()).type("testelaercio03@hotmail.com")
+    cy.get(loginelements.email()).type("laercioteste2021@hotmail.com")
 }
 senha(){
     cy.get(loginelements.senha()).type('123456')
@@ -34,8 +34,13 @@ validarlogincomsucesso(){
 }
 
 //login dados inválidos
+senhaincorreta(){
+    cy.get(loginelements.senha()).type('445678')
+}
 
-
+mensagemdeerrologin(){
+    cy.get(loginelements.mensagemdeerrologin()).contains('Invalid Email or Password')
+}
 
 
 }
