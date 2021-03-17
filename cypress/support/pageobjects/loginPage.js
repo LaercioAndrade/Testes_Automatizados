@@ -6,8 +6,8 @@ const url = Cypress.config("baseUrl")
 
 class LoginPage {
 
+//Login   
 //acessarSite
-
 acessarSite(){
     cy.visit(url)
     cy.wait(1000)
@@ -30,7 +30,13 @@ login(){
 }
 validarlogincomsucesso(){
     cy.get(loginelements.validarlogin()).contains('Hi, Laércio Gonçalves de Andrade')
+    cy.screenshot()
 }
+
+//login dados inválidos
+
+
+
 
 }
 

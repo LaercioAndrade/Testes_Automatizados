@@ -9,7 +9,7 @@ clicarlogin = () => {return '#loginfrm > .btn-primary'}
 validarlogin = () => {return '.text-align-left'}
 
 
-
+//login incorreto
 }
 
 export default loginElements;
