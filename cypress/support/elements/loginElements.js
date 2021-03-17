@@ -11,6 +11,11 @@ validarlogin = () => {return '.text-align-left'}
 
 //login incorreto
 mensagemdeerrologin = () => {return '.alert'}
+
+//logout
+minhaconta = () => {return '#dropdownCurrency'}
+logout = () => {return '.tr:nth-child(2)'}
+validarlogout = () => {return 'h3'} 
 }
 
 export default loginElements;

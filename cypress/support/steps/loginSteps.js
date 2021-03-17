@@ -34,3 +34,20 @@ And("preencho os dados invalidos", () =>{
 Then("valido se aparece uma mensagem de erro informando que não é possível realizar login", () => {
     PageLogin.mensagemdeerrologin();
 })
+
+//logout
+Given("que realizo login no site PHPT Travel", () =>{
+    PageLogin.acessarSite();
+})
+When("acesso  a minha conta", () =>{
+    PageLogin.botãominhaconta();
+    PageLogin.botãologin();
+    PageLogin.email();
+    PageLogin.senha();
+    PageLogin.login();
+
+})
+Then("valido se é possível realizar Logout", () =>{
+    PageLogin.botãominhaconta();
+    PageLogin.botãologout();
+})

@@ -42,7 +42,18 @@ mensagemdeerrologin(){
     cy.get(loginelements.mensagemdeerrologin()).contains('Invalid Email or Password')
 }
 
+//logout
+botãominhaconta(){
+    cy.wait(2000)
+    cy.get(loginelements.botãominhaconta()).click()
+}
+botãologout(){
+    cy.get(loginelements.logout()).click()
+}
 
+validarlogout(){
+    cy.get(loginelements.validarlogout()).contains('Login')
+}
 }
 
 export default LoginPage;
