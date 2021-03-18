@@ -18,5 +18,9 @@ When("acesso o Meu Perfil", () =>  {
 })
 
 Then("valido se é possível completar oo cadastro", () => {
-
+    PageProfile.address();
+    PageProfile.confirmaddress();
+    PageProfile.city();
+    PageProfile.estado();
+    PageProfile.cep();
 })

@@ -11,7 +11,7 @@ class ProfilePage {
 
 acessarSite(){
     cy.visit(url)
-    cy.wait(1000)
+    cy.wait(5000)
 }
 
 botãominhaconta(){
@@ -23,7 +23,7 @@ botãologin(){
 }
 
 email(){
-    cy.get(profileelements.email()).type("testelaercio10@hotmail.com")
+    cy.get(profileelements.email()).type("laercioteste50@hotmail.com")
 }
 
 senha(){
@@ -38,6 +38,25 @@ perfil(){
     cy.get(profileelements.myprofile()).click()
 }
 
+address(){
+    cy.get(profileelements.address()).type('Rua do Teste')
+}
+
+confirmaddress(){
+    cy.get(profileelements.confirmaddress()).type('Rua do Teste')
+}
+
+city(){
+    cy.get(profileelements.city()).type("Nova York City")
+}
+
+estado(){
+    cy.get(profileelements.estado()).type("Nova York")
+}
+
+cep(){
+    cy.get(profileelements.cep()).type("Madame Toussauds 234 West 42nd Street New York NY 10036")
+}
 
 }
 export default ProfilePage;
