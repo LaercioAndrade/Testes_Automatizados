@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2021-03-16T22:19:48.257Z",
-    "end": "2021-03-16T22:20:20.525Z",
-    "duration": 32268,
+    "start": "2021-03-18T00:12:08.474Z",
+    "end": "2021-03-18T00:12:42.766Z",
+    "duration": 34292,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "77775d39-0496-4891-8bbe-458ebdb1a51d",
+      "uuid": "71cdc5f3-07c4-4f38-b82c-76236232e5e1",
       "title": "",
       "fullFile": "cypress/integration/cadastro.feature",
       "file": "cypress/integration/cadastro.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d8523f05-e18d-40fe-8c2f-4c83fcb54139",
+          "uuid": "ddadf16f-87de-4f5c-bed7-c942a201e9cd",
           "title": "Realizar cadastro no site PHPTravels",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Realizar cadastro preenchendo todos os campos",
               "fullTitle": "Realizar cadastro no site PHPTravels Realizar cadastro preenchendo todos os campos",
               "timedOut": null,
-              "duration": 19647,
+              "duration": 23631,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "831bb773-6b43-4a08-81f3-1f190bd95454",
-              "parentUUID": "d8523f05-e18d-40fe-8c2f-4c83fcb54139",
+              "uuid": "d1406b3a-7651-44ec-8295-3db7e16920ea",
+              "parentUUID": "ddadf16f-87de-4f5c-bed7-c942a201e9cd",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Validar e-mail já existente",
               "fullTitle": "Realizar cadastro no site PHPTravels Validar e-mail já existente",
               "timedOut": null,
-              "duration": 12510,
+              "duration": 10503,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "e621acd9-7efd-4f1b-a8c4-d4eaf0096d1c",
-              "parentUUID": "d8523f05-e18d-40fe-8c2f-4c83fcb54139",
+              "uuid": "7290772f-fb59-42b3-9502-edbe43a2406f",
+              "parentUUID": "ddadf16f-87de-4f5c-bed7-c942a201e9cd",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "831bb773-6b43-4a08-81f3-1f190bd95454",
-            "e621acd9-7efd-4f1b-a8c4-d4eaf0096d1c"
+            "d1406b3a-7651-44ec-8295-3db7e16920ea",
+            "7290772f-fb59-42b3-9502-edbe43a2406f"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 32157,
+          "duration": 34134,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

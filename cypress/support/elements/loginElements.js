@@ -16,7 +16,13 @@ mensagemdeerrologin = () => {return '.alert'}
 minhaconta = () => {return '#dropdownCurrency'}
 logout = () => {return '.tr:nth-child(2)'}
 validarlogout = () => {return 'h3'} 
-}
 
+
+//Resetar Senha
+botãoforgetpassword = () => {return '.btn-warning'}
+emailreset = () => {return '#resetemail'}
+botãoreset = () => {return '.input-group-btn > .btn'}
+validarmensagemreset = () => {return '.alert'}
+}
 export default loginElements;
 

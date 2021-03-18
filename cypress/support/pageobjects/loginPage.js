@@ -10,7 +10,7 @@ class LoginPage {
 //acessarSite
 acessarSite(){
     cy.visit(url)
-    cy.wait(5000)
+    cy.wait(2000)
 }
 
 botãominhaconta(){
@@ -20,7 +20,7 @@ botãologin(){
     cy.get(loginelements.botãologin()).click()
 }
 email(){
-    cy.get(loginelements.email()).type("laercioteste2021@hotmail.com")
+    cy.get(loginelements.email()).type("testelaercio10@hotmail.com")
 }
 senha(){
     cy.get(loginelements.senha()).type('123456')
@@ -40,6 +40,7 @@ senhaincorreta(){
 
 mensagemdeerrologin(){
     cy.get(loginelements.mensagemdeerrologin()).contains('Invalid Email or Password')
+    cy.screenshot()
 }
 
 //logout
@@ -53,7 +54,25 @@ botãologout(){
 
 validarlogout(){
     cy.get(loginelements.validarlogout()).contains('Login')
-}
+    cy.screenshot()
 }
 
+//resetar senha
+botãoforgetpassword(){
+    cy.get(loginelements.botãoforgetpassword()).click()
+}
+
+campoemailreset(){
+    cy.get(loginelements.emailreset()).type("testelaercio20@hotmail.com")
+}
+
+botãoreset(){
+    cy.get(loginelements.botãoreset()).click()
+}
+
+mensagemreset(){
+    cy.get(loginelements.validarmensagemreset()).contains("New Password sent to testelaercio20@hotmail.com, Kindly check email")
+    cy.screenshot()
+}
+}
 export default LoginPage;

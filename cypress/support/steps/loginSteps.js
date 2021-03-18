@@ -50,4 +50,13 @@ When("acesso  a minha conta", () =>{
 Then("valido se é possível realizar Logout", () =>{
     PageLogin.botãominhaconta();
     PageLogin.botãologout();
+    PageLogin.validarlogout();
+})
+
+//Alterar Senha
+Then("valido se é possível alterar a senha", () =>{
+    PageLogin.botãoforgetpassword();
+    PageLogin.campoemailreset();
+    PageLogin.botãoreset();
+    PageLogin.mensagemreset();
 })
