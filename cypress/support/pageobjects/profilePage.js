@@ -23,7 +23,7 @@ botãologin(){
 }
 
 email(){
-    cy.get(profileelements.email()).type("laercioteste50@hotmail.com")
+    cy.get(profileelements.email()).type("laercioteste51@hotmail.com")
 }
 
 senha(){
@@ -58,5 +58,26 @@ cep(){
     cy.get(profileelements.cep()).type("Madame Toussauds 234 West 42nd Street New York NY 10036")
 }
 
+botãocountry(){
+    cy.get(profileelements.botãocountry()).click()
+}
+
+country(){
+
+    cy.get(profileelements.country()).type('Brazil')
+}
+
+selecionarcountry(){
+    cy.get(profileelements.selecionarcounty()).click()
+}
+
+botãosubmit(){
+    cy.get(profileelements.botãosubmit()).click()
+}
+
+validarpreenchimentocadastro(){
+    cy.get(profileelements.validardadospreenchidos()).contains("My Profile")
+    cy.screenshot()
+}
 }
 export default ProfilePage;

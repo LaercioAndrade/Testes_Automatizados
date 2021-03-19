@@ -23,4 +23,10 @@ Then("valido se é possível completar oo cadastro", () => {
     PageProfile.city();
     PageProfile.estado();
     PageProfile.cep();
+    PageProfile.botãocountry();
+    PageProfile.country();
+    PageProfile.selecionarcountry();
+    PageProfile.botãosubmit();
+    PageProfile.perfil();
+    PageProfile.validarpreenchimentocadastro();
 })

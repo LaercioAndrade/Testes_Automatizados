@@ -16,6 +16,11 @@ confirmaddress = () => {return ':nth-child(5) > .form-group > .form-control'}
 city = () => {return ':nth-child(3) > :nth-child(1) > .form-group > .form-control'}
 estado = () => {return ':nth-child(3) > :nth-child(2) > .form-group > .form-control'}
 cep = () => {return ':nth-child(4) > :nth-child(1) > .form-group > .form-control'}
+botãocountry = () => {return '.chosen-single'}
+country = () => {return '.chosen-search-input'}
+selecionarcounty = () => {return '.active-result'}
+botãosubmit = () => {return '.panel-footer > .btn'}
+validardadospreenchidos = () => {return '.heading-title'}
 }
 
 export default profileElements;
