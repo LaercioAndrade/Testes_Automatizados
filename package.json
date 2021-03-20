@@ -1,6 +1,7 @@
 {
     "scripts": {
-        "test:chrome": "cypress run --browser chrome"
+        "test:chrome": "cypress run --browser chrome",
+        "test": "cypress run"
     },
     "cypress-cucumber-preprocessor": {
         "step_definitions": "cypress/support/steps"
